@@ -10,7 +10,7 @@ public class View {
 		Scanner sc = new Scanner(System.in);
 		Controller controller1 = new Controller();
 		do {
-			System.out.println(" ");
+			System.out.println("sửa ");
 			controller1.TableOfConten();
 			System.out.println("Mời nhập lựa chọn:");
 			sValue = sc.nextLine();
