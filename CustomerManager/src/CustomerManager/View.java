@@ -12,6 +12,7 @@ public class View {
 		Controller controller1 = new Controller();
 		do {
 			System.out.println("sửa ");
+			System.out.println("Duc commit");
 			controller1.TableOfConten();
 			System.out.println("Mời nhập lựa chọn:");
 			sValue = sc.nextLine();
