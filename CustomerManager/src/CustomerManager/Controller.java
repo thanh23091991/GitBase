@@ -11,6 +11,7 @@ public class Controller {
 	List<Controller> listCustomer = new ArrayList<Controller>();
 	public void TableOfConten() {
 		//ducnv5   
+		//iuefy
 		System.out.println("--- Table of Content ---");
 		System.out.println("1. Nháº­p thÃ´ng tin khÃ¡ch hÃ ng?");
 		System.out.println("2. Hiá»ƒn thá»‹ danh sÃ¡ch khÃ¡ch hÃ ng?");
