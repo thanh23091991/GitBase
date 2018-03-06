@@ -22,6 +22,7 @@ public class Controller {
 	}
 	public void Edit() {
 		//adasdasdasdasdasdasdas
+		//sfdsfsfsd
 		System.out.println("MÃ£ khÃ¡ch hÃ ng?");
 		model1.RollNo = Integer.parseInt(sc.nextLine());
 		System.out.println("TÃªn khÃ¡ch hÃ ng?");
