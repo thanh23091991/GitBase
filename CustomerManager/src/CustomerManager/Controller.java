@@ -10,45 +10,46 @@ public class Controller {
 	Model model1 = new Model();
 	List<Controller> listCustomer = new ArrayList<Controller>();
 	public void TableOfConten() {
+		//ducnv5
 		System.out.println("--- Table of Content ---");
-		System.out.println("1. Nhập thông tin khách hàng?");
-		System.out.println("2. Hiển thị danh sách khách hàng?");
-		System.out.println("3. Cập nhật thông tin khách hàng?");
-		System.out.println("4. Xóa thông tin khách hàng?");
-		System.out.println("5. Sắp xếp thông tin khách hàng?"); //buddy sort, insertion sort, selection sort
-		System.out.println("6. Thoát chương trình?");
+		System.out.println("1. Nháº­p thÃ´ng tin khÃ¡ch hÃ ng?");
+		System.out.println("2. Hiá»ƒn thá»‹ danh sÃ¡ch khÃ¡ch hÃ ng?");
+		System.out.println("3. Cáº­p nháº­t thÃ´ng tin khÃ¡ch hÃ ng?");
+		System.out.println("4. XÃ³a thÃ´ng tin khÃ¡ch hÃ ng?");
+		System.out.println("5. Sáº¯p xáº¿p thÃ´ng tin khÃ¡ch hÃ ng?"); //buddy sort, insertion sort, selection sort
+		System.out.println("6. ThoÃ¡t chÆ°Æ¡ng trÃ¬nh?");
 		System.out.println("==> Input?");
 	}
 	public void Edit() {
 		
-		System.out.println("Mã khách hàng?");
+		System.out.println("MÃ£ khÃ¡ch hÃ ng?");
 		model1.RollNo = Integer.parseInt(sc.nextLine());
-		System.out.println("Tên khách hàng?");
+		System.out.println("TÃªn khÃ¡ch hÃ ng?");
 		model1.FullName =  sc.nextLine();
-		System.out.println("Nhập Email?");
+		System.out.println("Nháº­p Email?");
 		model1.Email = sc.nextLine();
-		System.out.println("- Mời nhập điện thoại?");
+		System.out.println("- Má»�i nháº­p Ä‘iá»‡n thoáº¡i?");
 		model1.Mobile = sc.nextLine();
-		System.out.println("- Địa chỉ của khách hàng?");
+		System.out.println("- Ä�á»‹a chá»‰ cá»§a khÃ¡ch hÃ ng?");
 		model1.Address = sc.nextLine();
 	}
 	public void EnterInfoCustomer() {
 		int n;
 		while(true) {
 			try {
-				System.out.println("Bạn muốn nhập bao nhiêu khách hàng?");
+				System.out.println("Báº¡n muá»‘n nháº­p bao nhiÃªu khÃ¡ch hÃ ng?");
 				 n = Integer.parseInt(sc.nextLine());
 				 if(n<=0)
 					 throw new NumberFormatException();
 				break;
 			}catch(NumberFormatException e) {
-				System.out.println("Bạn cần nhập vào một số nguyên dương");
+				System.out.println("Báº¡n cáº§n nháº­p vÃ o má»™t sá»‘ nguyÃªn dÆ°Æ¡ng");
 			}
 		}
 		for(int i = 0;i<n;i++) {
-			//Khai báo một đối tượng chưa thông tin khách hàng
+			//Khai bÃ¡o má»™t Ä‘á»‘i tÆ°á»£ng chÆ°a thÃ´ng tin khÃ¡ch hÃ ng
 			Controller controller1 = new Controller();
-			System.out.println("Khách hàng thứ "+ (i+1));
+			System.out.println("KhÃ¡ch hÃ ng thá»© "+ (i+1));
 			controller1.Edit();
 			listCustomer.add(controller1);
 		}
@@ -56,11 +57,11 @@ public class Controller {
 	public void ShowInfoCustomer() {
 		if(listCustomer.size()>0) {
 			for(Controller oCust: listCustomer) {
-				System.out.println("Mã khách hàng là " + oCust.model1.getRollNo());
-				System.out.println("Tên khách hàng là " + oCust.model1.getFullName());
-				System.out.println("Hộp thư điện tử là "+ oCust.model1.getEmail());
-				System.out.println("Số điện thoại là " + oCust.model1.getMobile());
-				System.out.println("Địa chỉ khách hàng là "+ oCust.model1.getAddress());
+				System.out.println("MÃ£ khÃ¡ch hÃ ng lÃ  " + oCust.model1.getRollNo());
+				System.out.println("TÃªn khÃ¡ch hÃ ng lÃ  " + oCust.model1.getFullName());
+				System.out.println("Há»™p thÆ° Ä‘iá»‡n tá»­ lÃ  "+ oCust.model1.getEmail());
+				System.out.println("Sá»‘ Ä‘iá»‡n thoáº¡i lÃ  " + oCust.model1.getMobile());
+				System.out.println("Ä�á»‹a chá»‰ khÃ¡ch hÃ ng lÃ  "+ oCust.model1.getAddress());
 			}
 		}
 	}
@@ -69,13 +70,13 @@ public class Controller {
 			int rollno;
 			while(true) {
 				try {
-					System.out.println("Nhập mã khách hàng bạn muốn sửa!");
+					System.out.println("Nháº­p mÃ£ khÃ¡ch hÃ ng báº¡n muá»‘n sá»­a!");
 					rollno = Integer.parseInt(sc.nextLine());
 					 if(rollno<=0)
 						 throw new NumberFormatException();
 					break;
 				}catch(NumberFormatException e) {
-					System.out.println("Bạn cần nhập vào một số nguyên dương");
+					System.out.println("Báº¡n cáº§n nháº­p vÃ o má»™t sá»‘ nguyÃªn dÆ°Æ¡ng");
 				}
 			}
 			for(Controller oCust: listCustomer) {
@@ -90,13 +91,13 @@ public class Controller {
 			int rollno;
 			while(true) {
 				try {
-					System.out.println("Nhập mã khách hàng bạn muốn sửa!");
+					System.out.println("Nháº­p mÃ£ khÃ¡ch hÃ ng báº¡n muá»‘n sá»­a!");
 					rollno = Integer.parseInt(sc.nextLine());
 					 if(rollno<=0)
 						 throw new NumberFormatException();
 					break;
 				}catch(NumberFormatException e) {
-					System.out.println("Bạn cần nhập vào một số nguyên dương");
+					System.out.println("Báº¡n cáº§n nháº­p vÃ o má»™t sá»‘ nguyÃªn dÆ°Æ¡ng");
 				}
 			}
 			for(Controller oCust: listCustomer) {
