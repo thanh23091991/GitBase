@@ -10,6 +10,7 @@ public class View {
 		boolean isValid = false;
 		Scanner sc = new Scanner(System.in);
 		Controller controller1 = new Controller();
+		System.out.println("hello");
 		do {
 			System.out.println("sửa ");
 			System.out.println("Duc commit");
