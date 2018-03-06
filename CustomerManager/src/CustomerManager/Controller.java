@@ -1,4 +1,4 @@
-package CustomerManager;
+﻿package CustomerManager;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,7 +13,8 @@ public class Controller {
 		//ducnv5   
 		//iuefy
 		//ducnv5 222222 06032018
-        //ducnv5 08:29 PM
+		//atfhgf thanh
+//ducnv5 08:35 PM
 		System.out.println("--- Table of Content ---");
 		System.out.println("1. Nháº­p thÃ´ng tin khÃ¡ch hÃ ng?");
 		System.out.println("2. Hiá»ƒn thá»‹ danh sÃ¡ch khÃ¡ch hÃ ng?");
